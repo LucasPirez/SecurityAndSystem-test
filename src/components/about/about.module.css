@@ -1,0 +1,8 @@
+.about {
+  width: 100%;
+  margin: 90px 0 30px;
+  border-top: 3px solid rgb(65, 127, 168);
+  border-bottom: 3px solid rgb(65, 127, 168);
+  font-size: 1.2em;
+  padding: 18px 0;
+}

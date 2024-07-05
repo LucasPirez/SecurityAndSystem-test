@@ -1,0 +1,28 @@
+.form {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  margin-bottom: 7px;
+}
+
+.label {
+  pointer-events: none;
+  text-align: right;
+  font-size: 0.9em;
+  height: 20px;
+  margin-bottom: 4px;
+  color: var(--rose-dark);
+}
+
+.hiddenLabel {
+  display: none;
+}

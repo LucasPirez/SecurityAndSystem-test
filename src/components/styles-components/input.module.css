@@ -1,0 +1,19 @@
+.input,
+.textarea {
+  background-color: none;
+  color: var(--text);
+  padding: 5px;
+  font-size: 1em;
+  padding: 0.5em 0;
+  padding-left: 15px;
+  border: 2px solid var(--dark-light-cyan);
+  opacity: 0.9;
+  border-radius: 5px;
+  outline: 0px;
+  transition: all 0.25s;
+}
+
+.input:focus,
+.textarea:focus {
+  opacity: 1;
+}

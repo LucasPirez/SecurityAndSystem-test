@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 800px;
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;
 
@@ -11,6 +11,30 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --bg-dark: #1d1e27;
+  --bg-dark-secondary: #282936;
+  --text-dark: #2c2d38;
+  --bg-blue: #25283d;
+  --text: #f8f8f7;
+  --rose-dark: #d73542;
+  --cyan-dark: #36aac8;
+  --cyan-light: #26a7d0;
+  --purple: #b19df7;
+  --midnight: #121063;
+  --dark-light-cyan: #86e0e7;
+  --dark-green: #93deac;
+  --dark-light-blue: #9bcaff;
+  --dark-limon-green: #d4ea93;
+  --dark-yellow: #ffcf91;
+  /* myDarkRed: '#eb9a9c',
+        myLightPurple: '#8B5CF6',
+        myLightLightGreen: '#a1c30d',
+        myLightGreen: '#29c76f',
+        myLightBlue: '#5486f3',
+        myLightOrange: '#ff9f42',
+        myLightCyan: '#3ec9d6',
+        myLightRed: '#ea5455', */
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -75,9 +99,14 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
+@media (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+}
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
@@ -90,12 +119,8 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--bg-dark)))
+    rgb(var(--bg-dark));
 }
 
 a {
